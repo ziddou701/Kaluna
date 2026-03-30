@@ -1,6 +1,15 @@
+import { useState } from 'react';
+
 const NavBar = () => {
+    
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
   return (
-    <div class="px-6 md:px-12 lg:px-24 xl:px-40 py-4 md:mt-5 flex items-center justify-between relative">
+    <div className="px-6 md:px-12 lg:px-24 xl:px-40 py-4 md:mt-5 flex items-center justify-between relative">
 
     {/* <!-- Kaluna Logo --> */}
     <div href="https://prebuiltui.com">
@@ -8,43 +17,55 @@ const NavBar = () => {
     </div>
 
     {/* <!-- Desktop div Items --> */}
-    <div class="hidden md:flex items-center bg-zinc-50 border border-zinc-200 rounded-full px-1 py-1 ml-auto">
-        <div class="hidden md:flex items-center px-3 py-1 ml-auto mr-2 gap-2">
-            <a href="#" class="px-4 py-1.5 rounded-full text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Home</a>
-            <a href="#" class="px-4 py-1.5 rounded-full text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Solutions</a>
-            <a href="#" class="px-4 py-1.5 rounded-full text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">About</a>
-            <a href="#" class="px-4 py-1.5 rounded-full text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Support</a>
+    <div className="hidden md:flex items-center bg-zinc-50 border border-zinc-200 rounded-full px-1 py-1 ml-auto">
+        <div className="hidden md:flex items-center px-3 py-1 ml-auto mr-2 gap-2">
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Home</a>
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Solutions</a>
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">About</a>
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Support</a>
         </div>
 
         {/* <!-- Desktop CTA Button --> */}
-        <button class="hidden md:flex items-center gap-2.5 bg-linear-to-l from-zinc-950 to-zinc-500 text-zinc-50 hover:text-zinc-200 text-sm font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0">
+        <button className="hidden md:flex items-center gap-2.5 bg-linear-to-l from-zinc-950 to-zinc-500 text-zinc-50 hover:text-zinc-200 text-sm font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0">
             Get started
-            <span class="w-7 h-7 rounded-full bg-white flex items-center justify-center">
+            <span className="w-7 h-7 rounded-full bg-white flex items-center justify-center">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.6 4.602h10m-4-4 4 4-4 4" stroke="#3f3f47" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
         </button>
     </div>
 
     {/* <!-- Mobile Hamburger --> */}
-    <button id="hamburger" onclick="toggleMenu()" class="md:hidden flex flex-col gap-1.5 cursor-pointer bg-transparent border-0 p-1">
-        <span id="bar1" class="block w-6 h-0.5 bg-zinc-800 transition-transform"></span>
-        <span id="bar2" class="block w-6 h-0.5 bg-zinc-800 transition-opacity"></span>
-        <span id="bar3" class="block w-6 h-0.5 bg-zinc-800 transition-transform"></span>
+    <button onClick={() => toggleMenu()} id="hamburger" className="md:hidden flex flex-col gap-1.5 cursor-pointer bg-transparent border-0 p-1">
+        <span id="bar1" 
+            className={`block w-6 h-0.5 bg-zinc-800 transition-all duration-300 ${isOpen ? "rotate-45 translate-y-4" : ""}`}>
+        </span>
+        <span id="bar2" 
+            className={`block w-6 h-0.5 bg-zinc-800 transition-all duration-300 ${isOpen ? "translate-y-6" : "opacity-100"}`}>
+        </span>
+        <span id="bar3" 
+            className={`block w-6 h-0.5 bg-zinc-800 transition-all duration-300 ${isOpen ? "-rotate-45" : ""}`}>
+        </span>
     </button>
 
     {/* <!-- Mobile Menu --> */}
-    {/* <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white border-t border-zinc-200 flex-col p-5 gap-1 md:hidden z-50">
-        <a href="#" class="block px-4 py-2.5 rounded-lg text-sm bg-zinc-50 font-medium text-zinc-800">Home</a>
-        <a href="#" class="block px-4 py-2.5 rounded-lg text-sm text-zinc-500 hover:bg-zinc-50">Services</a>
-        <a href="#" class="block px-4 py-2.5 rounded-lg text-sm text-zinc-500 hover:bg-zinc-50">Pricing</a>
-        <a href="#" class="block px-4 py-2.5 rounded-lg text-sm text-zinc-500 hover:bg-zinc-50">About</a>
-        <button class="flex items-center justify-center gap-2.5 bg-linear-to-r from-zinc-950 to-zinc-500 text-zinc-50 text-sm font-medium px-5 py-2.5 rounded-full cursor-pointer border-0 mt-3 w-fit">
+    
+    <div id="mobileMenu" 
+        className={`absolute top-full right-0 w-1/2 rounded-2xl bg-white border-t border-zinc-200 p-5 md:hidden z-50
+        transform transition-all duration-300 ease-in-out
+        ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-12 pointer-events-none"}
+        `}>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm  text-shadow-gray-500 hover:text-indigo-800">Home</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-indigo-800">Services</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-indigo-800">Pricing</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-indigo-800">About</a>
+        <button className="w-fit mt-3 ml-auto mr-2 pl-5 pr-3 py-2.5 flex items-center justify-center gap-2.5 bg-linear-to-l from-zinc-950 to-zinc-500 text-zinc-50 text-sm font-medium rounded-full cursor-pointer border-0 motion-safe:animate-pulse">
             Get started
-            <span class="w-7 h-7 rounded-full bg-white flex items-center justify-center">
+            <span className="w-7 h-7 rounded-full bg-white flex items-center justify-center">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.6 4.602h10m-4-4 4 4-4 4" stroke="#3f3f47" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
         </button>
-    </div> */}
+    </div>
+
 </div>
   );
 };

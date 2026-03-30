@@ -1,6 +1,6 @@
 const CallToAction1 = () => {
   return (
-    <section class="flex flex-col items-center justify-cente w-screen p-5 mt-20 mx-auto max-md:mx-2 max-md:px-2 max-w-5xl text-center md:rounded-2xl py-20 md:py-24 bg-gray-700 bg-cover bg-center bg-no-repeat">
+    <section class="max-w-5xl flex flex-col items-center justify-cente w-screen p-5 mt-20 mx-auto max-md:mx-2 max-md:px-2 text-center md:rounded-2xl py-20 md:py-24 bg-gray-700 bg-cover bg-center bg-no-repeat">
         <h1 class="p-5 text-3xl md:text-4xl font-medium text-white max-w-3xl text-center">Empower Your Sales & Marketing with a Next-Gen AI Workforce</h1>
         <div class="h-[3px] w-32 my-1 bg-gradient-to-l from-transparent to-indigo-600"></div>
         <p class="w-full md:w-5/6 p-5 text-sm md:text-base text-white">
