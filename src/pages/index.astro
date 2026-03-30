@@ -1,13 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import NavBar from '../components/NavBar.jsx';
+import CallToAction1 from '../components/CallToAction-1.jsx';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<!-- <Welcome /> -->
-	<NavBar/>
+	<div class="bg-gray-200 h-200 top-0 left-0 w-full overflow-hidden">
+
+		<!-- Contact Banner -->
+		<div class="w-full py-2.5 font-medium text-sm text-white text-center bg-gray-800">
+    		<p class="w-fit px-2 mx-auto md:ml-auto md:mr-20 "> Contact Us | Info@kaluna.sn | 33-230-34-34</p>
+		</div>
+
+		<!-- Main Content -->
+		<div class="">
+			<NavBar/>
+			<CallToAction1 />
+		</div>
+
+	</div>
 </Layout>
