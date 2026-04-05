@@ -9,25 +9,70 @@ const NavBar = () => {
     };
 
   return (
-    <div className="px-6 md:px-12 lg:px-24 xl:px-40 py-4 md:mt-5 flex items-center justify-between relative">
+<div className="px-6 md:px-12 lg:px-24 xl:px-40 py-4 md:pt-10 flex items-center justify-between relative">
 
     {/* <!-- Kaluna Logo --> */}
     <div href="https://prebuiltui.com">
-        <svg width="151" height="36" viewBox="0 0 151 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38.786 14.72q.696-.912 1.896-1.536t2.712-.624q1.728 0 3.144.864 1.44.84 2.256 2.376t.816 3.528-.816 3.576q-.816 1.56-2.256 2.448-1.416.864-3.144.864-1.512 0-2.688-.6-1.176-.624-1.92-1.536v8.208H36.05V12.776h2.736zm8.04 4.608q0-1.368-.576-2.352-.552-1.008-1.488-1.512a3.86 3.86 0 0 0-1.968-.528q-1.032 0-1.968.528-.912.528-1.488 1.536-.552 1.008-.552 2.376t.552 2.4q.576 1.008 1.488 1.536.936.528 1.968.528 1.056 0 1.968-.528.936-.552 1.488-1.584.576-1.032.576-2.4m8.226-4.632q.6-1.008 1.584-1.56 1.008-.576 2.376-.576v2.832h-.696q-1.608 0-2.448.816-.816.816-.816 2.832V26h-2.736V12.776h2.736zm18.595 4.368q0 .744-.096 1.344H63.447q.12 1.584 1.176 2.544t2.592.96q2.208 0 3.12-1.848h2.952q-.6 1.824-2.184 3-1.56 1.152-3.888 1.152-1.896 0-3.408-.84a6.3 6.3 0 0 1-2.352-2.4q-.84-1.56-.84-3.6t.816-3.576q.84-1.56 2.328-2.4 1.512-.84 3.456-.84q1.872 0 3.336.816a5.75 5.75 0 0 1 2.28 2.304q.816 1.464.816 3.384M70.79 18.2q-.024-1.512-1.08-2.424t-2.616-.912q-1.416 0-2.424.912-1.008.888-1.2 2.424zm8.284-3.456q.696-.96 1.896-1.56 1.224-.624 2.712-.624 1.752 0 3.168.84t2.232 2.4q.816 1.536.816 3.528t-.816 3.576q-.816 1.56-2.256 2.448-1.416.864-3.144.864-1.536 0-2.736-.6-1.176-.6-1.872-1.536V26H76.34V8.24h2.736zm8.04 4.584q0-1.368-.576-2.352-.552-1.008-1.488-1.512a3.86 3.86 0 0 0-1.968-.528q-1.032 0-1.968.528-.912.528-1.488 1.536-.552 1.008-.552 2.376t.552 2.4q.576 1.008 1.488 1.536.936.528 1.968.528 1.056 0 1.968-.528.936-.552 1.488-1.584.576-1.032.576-2.4m17.466-6.552V26h-2.736v-1.56q-.648.816-1.704 1.296a5.4 5.4 0 0 1-2.208.456q-1.56 0-2.808-.648-1.224-.648-1.944-1.92-.696-1.272-.696-3.072v-7.776h2.712v7.368q0 1.776.888 2.736.888.936 2.424.936t2.424-.936q.912-.96.912-2.736v-7.368zm5.002-1.752q-.744 0-1.248-.504a1.7 1.7 0 0 1-.504-1.248q0-.744.504-1.248a1.7 1.7 0 0 1 1.248-.504q.72 0 1.224.504t.504 1.248-.504 1.248a1.67 1.67 0 0 1-1.224.504m1.344 1.752V26h-2.736V12.776zm6.328-4.536V26h-2.736V8.24zm6.784 6.768v7.32q0 .744.336 1.08.36.312 1.2.312h1.68V26h-2.16q-1.848 0-2.832-.864t-.984-2.808v-7.32h-1.56v-2.232h1.56V9.488h2.76v3.288h3.216v2.232zm17.714-2.232V26h-2.736v-1.56q-.648.816-1.704 1.296a5.4 5.4 0 0 1-2.208.456q-1.56 0-2.808-.648-1.224-.648-1.944-1.92-.696-1.272-.696-3.072v-7.776h2.712v7.368q0 1.776.888 2.736.888.936 2.424.936t2.424-.936q.912-.96.912-2.736v-7.368zm5.002-1.752q-.744 0-1.248-.504a1.7 1.7 0 0 1-.504-1.248q0-.744.504-1.248a1.7 1.7 0 0 1 1.248-.504q.72 0 1.224.504t.504 1.248-.504 1.248a1.67 1.67 0 0 1-1.224.504m1.344 1.752V26h-2.736V12.776z" fill="#000" /><path d="m7.25 10.86 6 3.366 6-3.367m-12 20.176v-6.721l-6-3.367m24 0-6 3.367v6.72M1.61 14.42l11.64 6.54 11.64-6.54M13.25 34V20.947m12 5.18v-10.36c0-.454-.124-.9-.358-1.293a2.63 2.63 0 0 0-.975-.947l-9.333-5.18a2.73 2.73 0 0 0-2.667 0l-9.333 5.18a2.63 2.63 0 0 0-.976.947 2.54 2.54 0 0 0-.358 1.293v10.36c0 .454.124.9.358 1.293s.57.72.976.947l9.333 5.18a2.73 2.73 0 0 0 2.667 0l9.333-5.18a2.63 2.63 0 0 0 .975-.947 2.53 2.53 0 0 0 .358-1.293" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+    
+        <svg className='w-30' viewBox="0 0 593 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.0006 32.0006L5.0006 145.001" stroke="white" stroke-width="10" stroke-linecap="round"/>
+            <path d="M50.0006 5.0006V59.0006" stroke="white" stroke-width="10" stroke-linecap="round"/>
+            <path d="M5.0006 32.1018L47.0006 5.0006" stroke="white" stroke-width="10" stroke-linecap="round"/>
+            <path d="M5.0006 145.001L41.0204 169.392" stroke="white" stroke-width="10" stroke-linecap="round"/>
+            <path d="M130.602 30.1269L134.328 26.7932L127.826 19.1958L124.1 22.5294L127.351 26.3282L130.602 30.1269ZM60.7495 79.2019C58.6914 81.043 58.4786 84.2363 60.2741 86.3343C62.0697 88.4323 65.1936 88.6405 67.2517 86.7993L64.0006 83.0006L60.7495 79.2019ZM127.351 26.3282L124.1 22.5294L60.7495 79.2019L64.0006 83.0006L67.2517 86.7993L130.602 30.1269L127.351 26.3282Z" fill="url(#paint0_linear_0_1)"/>
+            <path d="M134.328 139.208L138.055 142.542L131.553 150.139L127.826 146.805L131.077 143.007L134.328 139.208ZM60.7495 86.7993C58.6914 84.9582 58.4786 81.7649 60.2741 79.6669C62.0696 77.569 65.1936 77.3607 67.2517 79.2019L64.0006 83.0006L60.7495 86.7993ZM131.077 143.007L127.826 146.805L60.7495 86.7993L64.0006 83.0006L67.2517 79.2019L134.328 139.208L131.077 143.007Z" fill="url(#paint1_linear_0_1)"/>
+            <path d="M90.5144 29.4597L94.2406 26.1258L87.7379 18.5288L84.0116 21.8627L87.263 25.6612L90.5144 29.4597ZM46.7492 55.2021C44.6913 57.0434 44.4787 60.2367 46.2744 62.3345C48.07 64.4324 51.194 64.6404 53.252 62.7991L50.0006 59.0006L46.7492 55.2021ZM87.263 25.6612L84.0116 21.8627L46.7492 55.2021L50.0006 59.0006L53.252 62.7991L90.5144 29.4597L87.263 25.6612Z" fill="url(#paint2_linear_0_1)"/>
+            <path d="M85.3122 147.28L87.5479 149.28L91.4496 144.722L89.2138 142.722L87.263 145.001L85.3122 147.28ZM51.9514 109.382C50.7167 108.277 48.8423 108.402 47.7649 109.661C46.6874 110.92 46.815 112.836 48.0498 113.94L50.0006 111.661L51.9514 109.382ZM87.263 145.001L89.2138 142.722L51.9514 109.382L50.0006 111.661L48.0498 113.94L85.3122 147.28L87.263 145.001Z" fill="url(#paint3_linear_0_1)"/>
+            <path d="M245.865 141.772C246.207 142.199 247.231 142.412 248.937 142.412V144.844H225.513V142.412C226.537 142.412 227.049 142.199 227.049 141.772C227.049 141.602 226.879 141.26 226.537 140.748L214.377 123.98L207.465 132.044V141.004C207.465 141.431 207.764 141.772 208.361 142.028C209.044 142.284 209.684 142.412 210.281 142.412V144.844H188.393V142.412C188.991 142.412 189.588 142.284 190.185 142.028C190.868 141.772 191.209 141.431 191.209 141.004V52.6844C191.209 52.2578 190.868 51.9164 190.185 51.6604C189.588 51.4044 188.991 51.2765 188.393 51.2765V48.8444H210.281V51.2765C209.684 51.2765 209.044 51.4044 208.361 51.6604C207.764 51.9164 207.465 52.2578 207.465 52.6844V109.26L224.361 89.8045L224.617 89.2924C224.617 88.6951 223.849 88.3965 222.313 88.3965V85.9645H247.913V88.3965H246.761C245.652 88.3965 244.927 88.5671 244.585 88.9085L223.977 112.844L245.865 141.772ZM327.141 88.3965C326.544 88.3965 325.904 88.5244 325.221 88.7804C324.624 89.0364 324.325 89.3778 324.325 89.8045V141.004C324.325 141.431 324.624 141.772 325.221 142.028C325.904 142.284 326.544 142.412 327.141 142.412V144.844H308.197V137.804C302.821 143.607 296.037 146.508 287.845 146.508C281.616 146.508 276.112 145.271 271.333 142.796C266.64 140.236 262.971 136.61 260.325 131.916C257.765 127.223 256.485 121.762 256.485 115.532C256.485 109.474 257.893 104.098 260.709 99.4044C263.611 94.6258 267.451 90.9565 272.229 88.3965C277.008 85.7511 282.213 84.4284 287.845 84.4284C296.037 84.4284 302.821 87.5858 308.197 93.9004V85.9645H327.141V88.3965ZM289.765 132.94C293.264 132.94 296.379 132.172 299.109 130.636C301.925 129.015 304.101 126.924 305.637 124.364C307.173 121.719 307.941 118.903 307.941 115.916C307.941 110.796 306.235 106.572 302.821 103.244C299.493 99.9164 295.141 98.2524 289.765 98.2524C284.56 98.2524 280.251 99.8738 276.837 103.116C273.509 106.359 271.845 110.498 271.845 115.532C271.845 120.823 273.552 125.047 276.965 128.204C280.464 131.362 284.731 132.94 289.765 132.94ZM341.837 52.6844C341.837 52.2578 341.496 51.9164 340.813 51.6604C340.216 51.4044 339.576 51.2765 338.893 51.2765V48.8444H361.421V51.2765C360.739 51.2765 360.056 51.4044 359.373 51.6604C358.776 51.9164 358.477 52.2578 358.477 52.6844V141.004C358.477 141.431 358.776 141.772 359.373 142.028C360.056 142.284 360.739 142.412 361.421 142.412V144.844H338.893V142.412C339.576 142.412 340.216 142.284 340.813 142.028C341.496 141.772 341.837 141.431 341.837 141.004V52.6844ZM430.743 141.004C430.743 141.431 431.042 141.772 431.639 142.028C432.322 142.284 432.962 142.412 433.559 142.412V144.844H417.687V140.108C413.165 144.034 407.917 145.996 401.943 145.996C392.983 145.996 386.413 143.436 382.231 138.316C378.05 133.111 375.959 126.626 375.959 118.86V89.8045C375.959 89.3778 375.618 89.0364 374.935 88.7804C374.338 88.5244 373.741 88.3965 373.143 88.3965V85.9645H394.903V88.3965C394.306 88.3965 393.666 88.5244 392.983 88.7804C392.386 89.0364 392.087 89.3778 392.087 89.8045V117.836C392.087 121.506 393.026 124.62 394.903 127.18C396.781 129.655 399.682 130.892 403.607 130.892C407.362 130.892 410.178 129.74 412.055 127.436C413.933 125.132 414.871 122.188 414.871 118.604V89.8045C414.871 89.3778 414.53 89.0364 413.847 88.7804C413.25 88.5244 412.653 88.3965 412.055 88.3965V85.9645H433.559V88.3965C432.962 88.3965 432.322 88.5244 431.639 88.7804C431.042 89.0364 430.743 89.3778 430.743 89.8045V141.004ZM508.881 141.004C508.881 141.431 509.18 141.772 509.777 142.028C510.46 142.284 511.143 142.412 511.825 142.412V144.844H489.297V142.412C489.98 142.412 490.62 142.284 491.217 142.028C491.9 141.772 492.241 141.431 492.241 141.004V114.38C492.241 110.028 491.175 106.316 489.041 103.244C486.908 100.087 483.708 98.5084 479.441 98.5084C475.089 98.5084 471.548 99.9591 468.817 102.86C466.172 105.762 464.849 109.943 464.849 115.404V141.004C464.849 141.431 465.148 141.772 465.745 142.028C466.428 142.284 467.111 142.412 467.793 142.412V144.844H445.393V142.412C446.076 142.412 446.716 142.284 447.313 142.028C447.996 141.772 448.337 141.431 448.337 141.004V89.8045C448.337 89.3778 447.996 89.0364 447.313 88.7804C446.716 88.5244 446.119 88.3965 445.521 88.3965V85.9645H464.849V91.2124C467.068 89.1644 469.671 87.5858 472.657 86.4764C475.729 85.2818 478.844 84.6844 482.001 84.6844C487.463 84.6844 492.199 85.8364 496.209 88.1404C500.305 90.4445 503.42 93.5591 505.553 97.4845C507.772 101.324 508.881 105.634 508.881 110.412V141.004ZM592.891 88.3965C592.294 88.3965 591.654 88.5244 590.971 88.7804C590.374 89.0364 590.075 89.3778 590.075 89.8045V141.004C590.075 141.431 590.374 141.772 590.971 142.028C591.654 142.284 592.294 142.412 592.891 142.412V144.844H573.947V137.804C568.571 143.607 561.787 146.508 553.595 146.508C547.366 146.508 541.862 145.271 537.083 142.796C532.39 140.236 528.721 136.61 526.075 131.916C523.515 127.223 522.235 121.762 522.235 115.532C522.235 109.474 523.643 104.098 526.459 99.4044C529.361 94.6258 533.201 90.9565 537.979 88.3965C542.758 85.7511 547.963 84.4284 553.595 84.4284C561.787 84.4284 568.571 87.5858 573.947 93.9004V85.9645H592.891V88.3965ZM555.515 132.94C559.014 132.94 562.129 132.172 564.859 130.636C567.675 129.015 569.851 126.924 571.387 124.364C572.923 121.719 573.691 118.903 573.691 115.916C573.691 110.796 571.985 106.572 568.571 103.244C565.243 99.9164 560.891 98.2524 555.515 98.2524C550.31 98.2524 546.001 99.8738 542.587 103.116C539.259 106.359 537.595 110.498 537.595 115.532C537.595 120.823 539.302 125.047 542.715 128.204C546.214 131.362 550.481 132.94 555.515 132.94Z" fill="white"/>
+            <line x1="101.359" y1="18.9879" x2="87.7735" y2="18.9988" stroke="#01CCFF"/>
+            <line x1="91.223" y1="28.1474" x2="101.656" y2="18.8123" stroke="#01CCFF"/>
+            <path d="M94.0062 25.7731L100.647 19.2325H87.3653L94.0062 25.7731Z" fill="#01CCFF"/>
+            <line x1="141.409" y1="19.7147" x2="127.823" y2="19.7257" stroke="#01CCFF"/>
+            <line x1="131.273" y1="28.8743" x2="141.706" y2="19.5392" stroke="#01CCFF"/>
+            <path d="M134.056 26.5L140.697 19.9593H127.415L134.056 26.5Z" fill="#01CCFF"/>
+            <line y1="-0.5" x2="13.5856" y2="-0.5" transform="matrix(-1 -0.000806427 -0.000806427 1 145.166 150.209)" stroke="#01CCFF"/>
+            <line y1="-0.5" x2="14" y2="-0.5" transform="matrix(0.745243 0.666793 0.666793 -0.745243 135.364 140.177)" stroke="#01CCFF"/>
+            <path d="M137.814 142.924L144.455 149.464H131.173L137.814 142.924Z" fill="#01CCFF"/>
+            <line y1="-0.25" x2="8.18202" y2="-0.25" transform="matrix(-1 -0.000806427 -0.000806427 1 95.7326 149.281)" stroke="#01CCFF" stroke-width="0.5"/>
+            <line y1="-0.25" x2="8.43159" y2="-0.25" transform="matrix(0.745243 0.666793 0.666793 -0.745243 89.7862 143.268)" stroke="#01CCFF" stroke-width="0.5"/>
+            <path d="M91.3271 144.89L95.3267 148.829H87.3276L91.3271 144.89Z" fill="#01CCFF"/>
+            <defs>
+            <linearGradient id="paint0_linear_0_1" x1="63.6755" y1="82.6207" x2="128.238" y2="27.3654" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFFFFF"/>
+            <stop offset="0.9999" stop-color="#03CCFF"/>
+            </linearGradient>
+
+            <linearGradient id="paint1_linear_0_1" x1="130.752" y1="143.387" x2="62.3914" y2="84.8809" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03CCFF"/>
+            <stop offset="1" stop-color="#FFFFFF"/>
+            </linearGradient>
+
+            <linearGradient id="paint2_linear_0_1" x1="49.6755" y1="58.6208" x2="87.6513" y2="26.1149" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFFFFF"/>
+            <stop offset="0.947115" stop-color="#00CCFF"/>
+            </linearGradient>
+
+            <linearGradient id="paint3_linear_0_1" x1="50.3257" y1="111.281" x2="88.3016" y2="143.787" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFFFFF"/>
+            <stop offset="1" stop-color="#03CCFF"/>
+            </linearGradient>
+            </defs>
+        </svg>
+
     </div>
 
     {/* <!-- Desktop div Items --> */}
-    <div className="hidden md:flex items-center bg-zinc-50 border border-zinc-200 rounded-full px-1 py-1 ml-auto">
-        <div className="hidden md:flex items-center px-3 py-1 ml-auto mr-2 gap-2">
-            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Home</a>
-            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Solutions</a>
-            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">About</a>
-            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-500 hover:text-indigo-800">Support</a>
+    <div className="hidden md:flex items-center bg-zinc-50/50 backdrop-blur-md rounded-full px-1 py-1 ml-auto">
+        <div className="hidden md:flex items-center px-3 py-1 ml-auto mr-2 gap-2 ">
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-300 hover:text-zinc-100/80">Home</a>
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-300 hover:text-zinc-100/80">Solutions</a>
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-300 hover:text-zinc-100/80">About</a>
+            <a href="#" className="px-4 py-1.5 text-sm transition-colors text-shadow-gray-300 hover:text-zinc-100/80">Support</a>
         </div>
 
         {/* <!-- Desktop CTA Button --> */}
-        <button className="hidden md:flex items-center gap-2.5 bg-linear-to-l from-zinc-950 to-zinc-500 text-zinc-50 hover:text-zinc-200 text-sm font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0">
-            Get started
+        <button className="hidden md:flex items-center gap-2.5 bg-linear-to-l from-zinc-800 to-zinc-500 text-zinc-50 hover:text-zinc-200 text-sm font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0">
+            Book A Free Consultation
             <span className="w-7 h-7 rounded-full bg-white flex items-center justify-center">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.6 4.602h10m-4-4 4 4-4 4" stroke="#3f3f47" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
@@ -37,29 +82,29 @@ const NavBar = () => {
     {/* <!-- Mobile Hamburger --> */}
     <button onClick={() => toggleMenu()} id="hamburger" className="md:hidden flex flex-col gap-1.5 cursor-pointer bg-transparent border-0 p-1">
         <span id="bar1" 
-            className={`block w-6 h-0.5 bg-zinc-800 transition-all duration-300 ${isOpen ? "rotate-45 translate-y-4" : ""}`}>
+            className={`block w-6 h-0.5 bg-zinc-200 transition-all duration-300 ${isOpen ? "rotate-45 translate-y-4" : ""}`}>
         </span>
         <span id="bar2" 
-            className={`block w-6 h-0.5 bg-zinc-800 transition-all duration-300 ${isOpen ? "translate-y-6" : "opacity-100"}`}>
+            className={`block w-6 h-0.5 bg-zinc-200 transition-all duration-300 ${isOpen ? "translate-y-6" : "opacity-100"}`}>
         </span>
         <span id="bar3" 
-            className={`block w-6 h-0.5 bg-zinc-800 transition-all duration-300 ${isOpen ? "-rotate-45" : ""}`}>
+            className={`block w-6 h-0.5 bg-zinc-200 transition-all duration-300 ${isOpen ? "-rotate-45" : ""}`}>
         </span>
     </button>
 
     {/* <!-- Mobile Menu --> */}
     
     <div id="mobileMenu" 
-        className={`absolute top-full right-0 w-1/2 rounded-2xl bg-white border-t border-zinc-200 p-5 md:hidden z-50
+        className={`absolute top-full right-0 w-1/2 rounded-2xl mx-1 bg-zinc-300 border-t border-zinc-200 p-5 md:hidden z-50
         transform transition-all duration-300 ease-in-out
         ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-12 pointer-events-none"}
         `}>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm  text-shadow-gray-500 hover:text-indigo-800">Home</a>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-indigo-800">Services</a>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-indigo-800">Pricing</a>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-indigo-800">About</a>
-        <button className="w-fit mt-3 ml-auto mr-2 pl-5 pr-3 py-2.5 flex items-center justify-center gap-2.5 bg-linear-to-l from-zinc-950 to-zinc-500 text-zinc-50 text-sm font-medium rounded-full cursor-pointer border-0 motion-safe:animate-pulse">
-            Get started
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm  text-shadow-gray-500 hover:text-zinc-100/80">Home</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-zinc-100/80">Services</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-zinc-100/80">Pricing</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-zinc-100/80">About</a>
+        <button className="w-fit mt-3 ml-auto mr-2 pl-5 pr-3 py-2.5 flex items-center justify-center gap-2.5 bg-linear-to-l from-zinc-800 to-zinc-500 text-zinc-50 text-xs font-medium rounded-full cursor-pointer border-0 ">
+            Free Consultation
             <span className="w-7 h-7 rounded-full bg-white flex items-center justify-center">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.6 4.602h10m-4-4 4 4-4 4" stroke="#3f3f47" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
