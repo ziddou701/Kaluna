@@ -1,6 +1,6 @@
 const CallToAction1 = () => {
   return (
-    <section className="max-w-3xl flex flex-col items-center justify-center p-5 mt-10 md:mt-16 mx-auto max-md:mx-2 max-md:px-2 text-center rounded-2xl md:rounded-4xl py-20 md:py-24 bg-linear-to-t from-zinc-600/50 to-transparent backdrop-blur-xs shadow-2xl">
+    <section className="max-w-3xl flex flex-col items-center justify-center p-5 mt-10 md:mt-16 mx-auto max-md:mx-2 max-md:px-2 text-center rounded-2xl md:rounded-4xl py-20 md:py-24 bg-linear-to-t from-zinc-600/50 via-transparent to-transparent backdrop-blur-xs shadow-2xl">
          <div className="w-fit px-4 py-1 border rounded-full border-zinc-100/30 bg-black/10 backdrop-blur-lg text-sm text-zinc-50/80">
             <p>Managed IT Services</p>
         </div>

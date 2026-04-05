@@ -95,15 +95,15 @@ const NavBar = () => {
     {/* <!-- Mobile Menu --> */}
     
     <div id="mobileMenu" 
-        className={`absolute top-full right-0 w-1/2 rounded-2xl mx-1 bg-zinc-300 border-t border-zinc-200 p-5 md:hidden z-50
+        className={`absolute top-full right-0 w-1/2 rounded-2xl mx-1 bg-zinc-50/50 backdrop-blur-lg p-5 md:hidden z-50
         transform transition-all duration-300 ease-in-out
         ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-12 pointer-events-none"}
         `}>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm  text-shadow-gray-500 hover:text-zinc-100/80">Home</a>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-zinc-100/80">Services</a>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-zinc-100/80">Pricing</a>
-        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-500 hover:text-zinc-100/80">About</a>
-        <button className="w-fit mt-3 ml-auto mr-2 pl-5 pr-3 py-2.5 flex items-center justify-center gap-2.5 bg-linear-to-l from-zinc-800 to-zinc-500 text-zinc-50 text-xs font-medium rounded-full cursor-pointer border-0 ">
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm  text-shadow-gray-300 hover:text-zinc-100/80">Home</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-300 hover:text-zinc-100/80">Services</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-300 hover:text-zinc-100/80">Pricing</a>
+        <a href="#" className="block w-fit px-4 py-2.5 ml-auto text-sm text-shadow-gray-300 hover:text-zinc-100/80">About</a>
+        <button className="w-fit mt-3 ml-auto mr-2 pl-5 pr-3 py-2.5 flex items-center justify-center gap-2.5 bg-linear-to-l from-zinc-800 to-zinc-500 text-zinc-50 text-xs font-semibold rounded-full cursor-pointer border-0 ">
             Free Consultation
             <span className="w-7 h-7 rounded-full bg-white flex items-center justify-center">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.6 4.602h10m-4-4 4 4-4 4" stroke="#3f3f47" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>

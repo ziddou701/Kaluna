@@ -2,10 +2,11 @@
 import NavBar from '../components/NavBar.jsx';
 import CallToAction1 from '../components/CallToAction-1.jsx';
 import Layout from '../layouts/Layout.astro';
+import WhatWeDo from '../components/WhatWeDo.jsx';
 ---
 
 <Layout>
-	<div class="absolute top-0 left-0 w-full overflow-hidden">
+	<div class="absolute top-0 left-0 w-full overflow-hidden font-[roboto]">
 
 		<!-- Contact Banner -->
 		<div class="relative w-full py-2.5 my-0 font-medium text-sm text-white text-center bg-gray-800">
@@ -15,15 +16,16 @@ import Layout from '../layouts/Layout.astro';
 		<!-- Main Content -->
 
 		<!-- Hero Section -->
-		<div class="bg-gray-200 bg-[url('/src/assets/hero.webp')] bg-cover h-180 md:h-200 w-full relative left-0 my-0 py-0">
-			<div class="absolute inset-0 bg-linear-to-r from-black/60 via-black/50 to-black/60">
+		<div class="bg-[url('/src/assets/hero.webp')] bg-cover min-h-170 md:min-h-200 w-full relative left-0 my-0 py-0">
+			<div class=" absolute inset-0 bg-linear-to-r from-black/60 via-black/50 to-black/60">
 				<NavBar client:load/>
 				<CallToAction1 />
 			</div>
 		</div>
+
 		<!-- WhatWeDo Section -->
-		<div>
-			
+		<div class="w-full min-h-170 md:min-h-200 bg-zinc-100">
+			<WhatWeDo/>
 		</div>
 
 	</div>
