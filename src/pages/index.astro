@@ -3,6 +3,8 @@ import NavBar from '../components/NavBar.jsx';
 import CallToAction1 from '../components/CallToAction-1.jsx';
 import Layout from '../layouts/Layout.astro';
 import WhatWeDo from '../components/WhatWeDo.jsx';
+import WhyUs from '../components/WhyUs.jsx';
+import Footer from '../components/Footer.jsx';
 ---
 
 <Layout>
@@ -24,9 +26,19 @@ import WhatWeDo from '../components/WhatWeDo.jsx';
 		</div>
 
 		<!-- WhatWeDo Section -->
-		<div class="w-full min-h-170 md:min-h-200 bg-zinc-100">
+		<div class="w-full min-h-170 md:min-h-250 bg-zinc-100">
 			<WhatWeDo />
 		</div>
+
+		<!-- Why Us Section -->
+		<div class="w-full min-h-170 md:min-h-210 bg-[url('/src/assets/why-us.webp')] bg-cover">
+			<WhyUs />
+		</div>
+
+		<!-- Footer -->
+		 <div>
+			<Footer />
+		 </div>
 
 	</div>
 </Layout>
