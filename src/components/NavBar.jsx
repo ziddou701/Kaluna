@@ -71,7 +71,7 @@ const NavBar = () => {
         </div>
 
         {/* <!-- Desktop CTA Button --> */}
-        <button className="hidden md:flex items-center gap-2.5 bg-linear-to-l from-zinc-800 to-zinc-500 text-zinc-50 hover:text-zinc-200 text-sm font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0">
+        <button className="hidden md:flex items-center gap-2.5 bg-linear-to-tr from-indigo-700/50 via-violet-600/50 to-indigo-700 text-zinc-50 hover:text-zinc-200 text-sm font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0">
             Book A Free Consultation
             <span className="w-7 h-7 rounded-full bg-white flex items-center justify-center">
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.6 4.602h10m-4-4 4 4-4 4" stroke="#3f3f47" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
